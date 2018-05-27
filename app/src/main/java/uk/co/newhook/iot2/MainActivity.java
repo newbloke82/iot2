@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     String clientId = "ExampleAndroidClient";
     final String publishTopic = "pimoroni/blinkt";
-    final String publishMessage = "clr";
+    String publishMessage = "clr";
     final String TAG = "IOT2";
 
 
@@ -41,6 +41,79 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Code here executes on main thread after user presses button
+                publishMessage = "clr";
+                publishMessage();
+            }
+        });
+
+        final Button button1 = findViewById(R.id.button0);
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,0,255,0,0";
+                publishMessage();
+            }
+        });
+
+        final Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,1,255,127,0";
+                publishMessage();
+            }
+        });
+
+        final Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,2,255,255,0";
+                publishMessage();
+            }
+        });
+
+        final Button button4 = findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,3,0,255,0";
+                publishMessage();
+            }
+        });
+
+        final Button button5 = findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,4,0,0,255";
+                publishMessage();
+            }
+        });
+
+        final Button button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,5,75,0,130";
+                publishMessage();
+            }
+        });
+
+        final Button button7 = findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,6,148,0,211";
+                publishMessage();
+            }
+        });
+
+        final Button button8 = findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Code here executes on main thread after user presses button
+                publishMessage = "rgb,7,255,255,255";
                 publishMessage();
             }
         });
